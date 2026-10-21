@@ -1,0 +1,60 @@
+# ===== STM32 (Keil MDK 标准库工程) =====
+
+# 编译中间文件（Objects 一个工程就有 20+ MB，绝不能提交）
+Objects/
+Listings/
+DebugConfig/
+build/
+output/
+
+*.o
+*.d
+*.crf
+*.dep
+*.lnp
+*.lst
+*.map
+*.axf
+*.elf
+*.hex
+*.bin
+*.iex
+*.sct
+*.htm
+*.build_log.htm
+*.bak
+*.__i
+*.i
+*.lnk
+
+# Keil 个人设置：换台电脑就不同，还会天天变动污染提交历史
+*.uvoptx
+*.uvguix.*
+*.uvprojx.user
+JLinkLog.txt
+JLinkSettings.ini
+*.scvd
+RTE/_*/
+
+# STM32CubeIDE / 其他 IDE
+.metadata/
+.settings/
+.cproject.user
+*.launch
+.vscode/
+.idea/
+cmake-build-*/
+
+# 系统垃圾
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# AI 助手的工作目录（个人笔记，不对外）
+.workbuddy/
+
+# ===== 必须提交，别加进忽略 =====
+# Project.uvprojx   没有它别人打不开工程
+# Library/ Start/   STM32 标准外设库与启动文件
+# User/ Hardware/   你自己写的代码
+# *.bat             keilkill / 切换答案版的脚本
